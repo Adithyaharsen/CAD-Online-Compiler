@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { OCdashboard } from './pages/maindashboard.js';
+import { HomePage } from './pages/homepage.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NamePage } from './pages/namepage.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet><title>CAD Online Compiler</title></Helmet>
+
+    	<Router>
+    	  <Routes>
+          <Route path='/' element={<NamePage />}></Route>
+          <Route path='/:Name/homepage' element={<HomePage />}></Route>
+          <Route path='/:Name/programs' element={<OCdashboard />}></Route>
+      	</Routes>
+      </Router>
     </div>
   );
 }
