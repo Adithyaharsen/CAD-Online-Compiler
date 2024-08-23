@@ -1,0 +1,173 @@
+.main-dashboard{
+    display: grid;
+    width: 95%;
+    height: 1080px;
+    grid-template-rows: 1fr 4fr;
+    grid-row-gap: 25px;
+    background-color: black; 
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr; 
+        background-color: rgb(69, 69, 69);
+
+        .back{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropdown{
+            display: flex;
+            align-items: center; /* Centers content vertically within the grid cell */
+            justify-content: center; /* Centers content horizontally within the grid cell */
+        }
+
+    }
+
+    .compilespace{
+        display: grid;
+        grid-template-columns: 1fr 7fr 7fr;
+
+        .languages{
+            align-items: center;
+            height: 815px;
+            background-color: rgb(69, 69, 69);
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-row-gap: 25px;
+
+            .lang{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .javascript{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/javascript.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .typescript{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/typescript.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .python{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/python.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .java{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/java.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .csharp{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/csharp.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .php{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                background-color: rgb(69, 69, 69);
+                background-image: url('../images/php.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .file{
+            display: grid;
+            grid-template-rows: 1fr 9fr;
+            border: 5px solid #60B6B0;
+
+            .head1{
+                display: grid;
+                grid-template-columns: 8fr 2fr 2fr;
+                background-color: #60B6B0;
+
+                .input{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: rgb(69, 69, 69);
+                }
+                .sh{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .share{
+                        border: 5px solid #60B6B0;
+                        width: 50px;
+                        height: 50px;
+                        background-image: url('../images/share.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-color: #60B6B0;
+                    }
+                }
+                .run{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+        }
+
+        .output{
+            display: grid;
+            grid-template-rows: 1fr 9fr;
+            border: 5px solid #60B6B0;
+
+            .head2{
+                display: grid;
+                grid-template-columns: 12fr 2fr;
+                background-color: #60B6B0;
+                color: rgb(69, 69, 69);
+                
+                .output{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .clear{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+        }
+    }
+
+}
